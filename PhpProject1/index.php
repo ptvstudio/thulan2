@@ -27,6 +27,8 @@
 <div class="cc">
     <a href="Delete.php">Delete</a>
 </div>
+<div>
+<a href="ConnectToDB.php" target="_blank" >Connect database</a>
 </div>
 </div>
 <div class="menu-bar">
