@@ -17,7 +17,16 @@
 <i class="fa fa-bars" id="close-btn" onclick="closemenu()"></i>
 <a href="PTVOnline.php"><img src="Images/Logo.png" class="logo"></a>
 <input type=text class="form-control">
-<span class="input-group-text"><i class="fa fa-search"></i></span>          
+<span class="input-group-text"><i class="fa fa-search"></i></span>
+<div class="cc">
+    <a href="Update.php">Update</a>
+</div>
+<div class="cc">
+    <a href="Insert.php">Insert</a>
+</div>
+<div class="cc">
+    <a href="Delete.php">Delete</a>
+</div>
 </div>
 </div>
 <div class="menu-bar">
