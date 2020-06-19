@@ -19,13 +19,13 @@
 <input type=text class="form-control">
 <span class="input-group-text"><i class="fa fa-search"></i></span>
 <div class="cc">
-    <a href="Update.php">Update</a>
+    <a href="Updatedata.php">Update</a>
 </div>
 <div class="cc">
-    <a href="Insert.php">Insert</a>
+    <a href="Insertdata.php">Insert</a>
 </div>
 <div class="cc">
-    <a href="Delete.php">Delete</a>
+    <a href="Deletedata.php">Delete</a>
 </div>
 <div>
     <a href="connect.php" target="_blank" >Connect database</a>
