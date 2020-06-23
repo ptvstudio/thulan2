@@ -43,7 +43,7 @@
     
     <div class="col-md-7">
     <p class="new-arrival text-center">NEW</p>
-        <h2>Dakar Watch - Black Color</h2>
+        <h2>Dakar Robot - Black Color</h2>
     <i class="fa fa-star"></i>
     <i class="fa fa-star"></i>
     <i class="fa fa-star"></i>
@@ -74,7 +74,7 @@
 <div class="row">
 <div class="col-md-3">
 <div class="product-top">
-<img src="Images/Product1.png">
+    <img src="Images/21311_alt2.jpg">
     <div class="overlay-right">
     <button tyep="button" class="btn btn-secondary" title="Quick Shop">
         <i class="fa fa-angle-right"></i>
@@ -99,7 +99,7 @@
 </div>   
     <div class="col-md-3">
 <div class="product-top">
-<img src="Images/Product2.png">
+    <img src="Images/104952276_294843285030554_8354510313954217855_n.png">
     <div class="overlay-right">
     <button tyep="button" class="btn btn-secondary" title="Quick Shop">
         <i class="fa fa-angle-right"></i>
@@ -124,7 +124,7 @@
 </div>
     <div class="col-md-3">
 <div class="product-top">
-<img src="Images/Product3.png">
+    <img src="Images/s-l1000.jpg">
     <div class="overlay-right">
     <button tyep="button" class="btn btn-secondary" title="Quick Shop">
         <i class="fa fa-angle-right"></i>
@@ -149,7 +149,7 @@
 </div>
     <div class="col-md-3">
 <div class="product-top">
-<img src="Images/Product4.png">
+    <img src="Images/trans.png">
     <div class="overlay-right">
     <button tyep="button" class="btn btn-secondary" title="Quick Shop">
         <i class="fa fa-angle-right"></i>
