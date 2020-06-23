@@ -14,11 +14,11 @@ list-style: none;
 <h2>Enter data into student table</h2>
 <ul>
     <form name="InsertData" action="InsertData.php" method="POST" >
-<li>productid:</li><li><input type="text" name="Product ID" /></li>
-<li>productname:</li><li><input type="text" name="Product Name" /></li>
-<li>sizes:</li><li><input type="text" name="Sizes" /></li>
-<li>basicprice:</li><li><input type="text" name="Basicprice" /></li>
-<li>residual:</li><li><input type="text" name="Residual" /></li>
+<li>productid:</li><li><input type="text" name="productid" /></li>
+<li>productname:</li><li><input type="text" name="productname" /></li>
+<li>size:</li><li><input type="text" name="sizes" /></li>
+<li>basicprice:</li><li><input type="text" name="basicprice" /></li>
+<li>residual:</li><li><input type="text" name="residual" /></li>
 <li><input type="submit" /></li>
 </form>
 </ul>
