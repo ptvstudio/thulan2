@@ -13,13 +13,13 @@ list-style: none;
 <h1>INSERT DATA TO DATABASE</h1>
 <h2>Enter data into student table</h2>
 <ul>
-    <form name="InsertData" action="Insertdata.php" method="POST">
-<li>productid:</li><li><input type="text" name="productid" /></li>
-<li>productname:</li><li><input type="text" name="productname" /></li>
-<li>size:</li><li><input type="text" name="sizes"/></li>
-<li>basicprice:</li><li><input type="text" name="basicprice"/></li>
-<li>residual:</li><li><input type="text" name="residual"/></li>
-<li><input type="submit"/></li>
+    <form name="InsertData" action="Insertdata.php" method="POST" >
+<li>Product ID:</li><li><input type="text" name="productid" /></li>
+<li>Product Name:</li><li><input type="text" name="productname" /></li>
+<li>Size:</li><li><input type="text" name="sizes" /></li>
+<li>Basicprice:</li><li><input type="text" name="basicprice" /></li>
+<li>Residual:</li><li><input type="text" name="residual" /></li>
+<li><input type="submit" /></li>
 </form>
 </ul>
 
@@ -27,16 +27,14 @@ list-style: none;
 
 if (empty(getenv("DATABASE_URL"))){
     echo '<p>The DB does not exist</p>';
-    $pdo = new PDO('pgsql:host=localhost;port=5432;dbname=mysql', 'postgres', '12345');
+    $pdo = new PDO('pgsql:host=localhost;port=5432;dbname=mydb', 'postgres', '123456');
 }  else {
      
    $db = parse_url(getenv("DATABASE_URL"));
    $pdo = new PDO("pgsql:" . sprintf(
-                 "host=
+         "host=
 ec2-35-172-73-125.compute-1.amazonaws.com
-;port=5432;user=tjdbbuqrfdlyyq;password=25ffc0cd7a2f79a8d6cc7e1d560a8f4ae1da44f7dfcfae4a795b7c3fe3cf3915
-;dbname=d120l5u259o1la
-",
+;port=5432;user=tjdbbuqrfdlyyq;password=25ffc0cd7a2f79a8d6cc7e1d560a8f4ae1da44f7dfcfae4a795b7c3fe3cf3915;dbname=d120l5u259o1la",
         $db["host"],
         $db["port"],
         $db["user"],
@@ -50,12 +48,12 @@ if($pdo === false){
 }
 
 
-$sql = "INSERT INTO product(productid, productname, sizes, basicprice, residual)"
-        . " VALUES('$_POST[productid]','$_POST[productname]','$_POST[size]','$_POST[basicprice]','$_POST[residual]')";
+$sql = "INSERT INTO product(productid, productname,sizes, basicprice,residual)"
+        . " VALUES('$_POST[productid]','$_POST[productname]','$_POST[sizes]','$_POST[basicprice]','$_POST[residual]')";
 $stmt = $pdo->prepare($sql);
 //$stmt->execute();
- if (is_null($_POST[productid])) {
-   echo "productid must be not null";
+ if (is_null($_POST[StudentID])) {
+   echo "StudentID must be not null";
  }
  else
  {
