@@ -29,7 +29,7 @@
 <section class="header">
 <div class="side-menu" id="side-menu">
 <ul>
-<li>On Sale<i class="fa fa-angle-right"></i>
+<li>Database<i class="fa fa-angle-right"></i>
 <ul>
     <a href="Updatedata.php.php"><li>Update</li></a>
     <a href="Insertdata.php"><li>Insert</li></a>
