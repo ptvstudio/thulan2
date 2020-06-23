@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-<title>Insert data to PostgreSQL with php - creating a simple web application</title>
+<title>Insert data to PostgreSQL with PHP</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <style>
 li {
@@ -11,9 +11,9 @@ list-style: none;
 </head>
 <body>
 <h1>INSERT DATA TO DATABASE</h1>
-<h2>Enter data into student table</h2>
+<h2>Enter data into product table</h2>
 <ul>
-    <form name="InsertData" action="Insertdata.php" method="POST" >
+    <form name="Insertdata" action="Insertdata.php" method="POST" >
 <li>Product ID:</li><li><input type="text" name="productid" /></li>
 <li>Product Name:</li><li><input type="text" name="productname" /></li>
 <li>Size:</li><li><input type="text" name="sizes" /></li>
@@ -27,7 +27,7 @@ list-style: none;
 
 if (empty(getenv("DATABASE_URL"))){
     echo '<p>The DB does not exist</p>';
-    $pdo = new PDO('pgsql:host=localhost;port=5432;dbname=users', 'postgres', 'Vupro1234@');
+    $pdo = new PDO('pgsql:host=localhost;port=5432;dbname=users', 'postgres', '123456');
 }  else {
      
    $db = parse_url(getenv("DATABASE_URL"));
@@ -48,12 +48,12 @@ if($pdo === false){
 }
 
 
-$sql = "INSERT INTO product(productid, productname, sizes, basicprice, residual)"
+$sql = "INSERT INTO product(productid, productname, sizes, basicprice, residual)" 
         . " VALUES('$_POST[productid]','$_POST[productname]','$_POST[sizes]','$_POST[basicprice]','$_POST[residual]')";
 $stmt = $pdo->prepare($sql);
 //$stmt->execute();
- if (is_null($_POST[StudentID])) {
-   echo "StudentID must be not null";
+ if (is_null($_POST[productid])) {
+   echo "ProductID must be not null";
  }
  else
  {
