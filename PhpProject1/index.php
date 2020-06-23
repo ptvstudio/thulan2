@@ -100,7 +100,7 @@
     <i class="fa fa-star"></i>
     <i class="fa fa-star"></i>
     <i class="fa fa-star-half-o"></i>
-        <h3>Watch</h3>
+        <h3>Robot</h3>
         <h5>$50.00</h5>
     </div>
 </div>   
@@ -125,7 +125,7 @@
     <i class="fa fa-star"></i>
     <i class="fa fa-star"></i>
     <i class="fa fa-star"></i>
-        <h3>Smart Phone</h3>
+        <h3>Doll</h3>
         <h5>$40.00</h5>
     </div>       
 </div>
@@ -150,7 +150,7 @@
     <i class="fa fa-star"></i>
     <i class="fa fa-star"></i>
     <i class="fa fa-star"></i>
-        <h3>Fidelio Headphone</h3>
+        <h3>Woody doll</h3>
         <h5>$60.00</h5>
     </div>     
 </div>
@@ -175,7 +175,7 @@
     <i class="fa fa-star"></i>
     <i class="fa fa-star"></i>
     <i class="fa fa-star"></i>
-        <h3>Gaming Chair</h3>
+        <h3>Transfomer Robot</h3>
         <h5>$150.00</h5>
     </div>     
 </div>
@@ -210,7 +210,7 @@
     <i class="fa fa-star"></i>
     <i class="fa fa-star"></i>
     <i class="fa fa-star-half-o"></i>
-        <h3>Watch</h3>
+        <h3>Robot</h3>
         <h5>$50.00</h5>
     </div>
 </div>   
@@ -235,7 +235,7 @@
     <i class="fa fa-star"></i>
     <i class="fa fa-star"></i>
     <i class="fa fa-star"></i>
-        <h3>Smart Phone</h3>
+        <h3>Doll</h3>
         <h5>$40.00</h5>
     </div>       
 </div>
@@ -260,7 +260,7 @@
     <i class="fa fa-star"></i>
     <i class="fa fa-star"></i>
     <i class="fa fa-star"></i>
-        <h3>Fidelio Headphone</h3>
+        <h3>Woody doll</h3>
         <h5>$60.00</h5>
     </div>     
 </div>
@@ -285,7 +285,7 @@
     <i class="fa fa-star"></i>
     <i class="fa fa-star"></i>
     <i class="fa fa-star"></i>
-        <h3>Gaming Chair</h3>
+        <h3>Transformer Robot</h3>
         <h5>$150.00</h5>
     </div>     
 </div>
