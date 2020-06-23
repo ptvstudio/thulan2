@@ -13,13 +13,13 @@ list-style: none;
 <h1>INSERT DATA TO DATABASE</h1>
 <h2>Enter data into student table</h2>
 <ul>
-    <form name="InsertData" action="Insertdata.php" method="POST" >
+    <form name="InsertData" action="Insertdata.php" method="POST">
 <li>productid:</li><li><input type="text" name="productid" /></li>
 <li>productname:</li><li><input type="text" name="productname" /></li>
-<li>size:</li><li><input type="text" name="sizes" /></li>
-<li>basicprice:</li><li><input type="text" name="basicprice" /></li>
-<li>residual:</li><li><input type="text" name="residual" /></li>
-<li><input type="submit" /></li>
+<li>size:</li><li><input type="text" name="sizes"/></li>
+<li>basicprice:</li><li><input type="text" name="basicprice"/></li>
+<li>residual:</li><li><input type="text" name="residual"/></li>
+<li><input type="submit"/></li>
 </form>
 </ul>
 
@@ -27,7 +27,7 @@ list-style: none;
 
 if (empty(getenv("DATABASE_URL"))){
     echo '<p>The DB does not exist</p>';
-    $pdo = new PDO('pgsql:host=localhost;port=5432;dbname=mydb', 'postgres', '123456');
+    $pdo = new PDO('pgsql:host=localhost;port=5432;dbname=PTV', 'postgres', 'Vupro1234@');
 }  else {
      
    $db = parse_url(getenv("DATABASE_URL"));
