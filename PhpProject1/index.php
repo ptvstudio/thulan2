@@ -29,30 +29,10 @@
 <section class="header">
 <div class="side-menu" id="side-menu">
 <ul>
-<li>Database<i class="fa fa-angle-right"></i>
-<ul>
-    <a href="Updatedata.php.php"><li>Update</li></a>
-    <a href="Insertdata.php"><li>Insert</li></a>
-    <a href="Deletedata.php"><li>Delete</li></a>
-    <a href="connect.php"><li>Connect database</li></a>
-</ul>     
-</li>
-<li>Mobiles<i class="fa fa-angle-right"></i>
-<ul>
-    <li>Sub Menu 2</li>
-    <li>Sub Menu 2</li>
-    <li>Sub Menu 2</li>
-    <li>Sub Menu 2</li>
-</ul>    
-</li>  
-<li>Computer<i class="fa fa-angle-right"></i>
-<ul>
-    <li>Sub Menu 3</li>
-    <li>Sub Menu 3</li>
-    <li>Sub Menu 3</li>
-    <li>Sub Menu 3</li> 
-</ul>
-</li>         
+    <a href="Updatedata.php"><li>Update<i class="fa fa-angle-right"></i></li></a>
+    <a href="Insertdata.php"><li>Insert<i class="fa fa-angle-right"></i></li></a>  
+    <a href="Deletedata.php"><li>Delete<i class="fa fa-angle-right"></i></li></a>
+    <a href="connect.php"><li>Connect database<i class="fa fa-angle-right"></i></li></a> 
 </ul>       
 </div>  
 <div class="slider">
