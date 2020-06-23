@@ -18,18 +18,6 @@
 <a href="PTVOnline.php"><img src="Images/Logo.png" class="logo"></a>
 <input type=text class="form-control">
 <span class="input-group-text"><i class="fa fa-search"></i></span>
-<div class="cc">
-    <a href="Updatedata.php">Update</a>
-</div>
-<div class="cc">
-    <a href="Insertdata.php">Insert</a>
-</div>
-<div class="cc">
-    <a href="Deletedata.php">Delete</a>
-</div>
-<div>
-    <a href="connect.php" target="_blank" >Connect database</a>
-</div>
 </div>
 <div class="menu-bar">
 <ul>
@@ -43,10 +31,10 @@
 <ul>
 <li>On Sale<i class="fa fa-angle-right"></i>
 <ul>
-    <li>Sub Menu 1</li>
-    <li>Sub Menu 1</li>
-    <li>Sub Menu 1</li>
-    <li>Sub Menu 1</li> 
+    <a href="Updatedata.php.php"><li>Update</li></a>
+    <a href="Insertdata.php"><li>Insert</li></a>
+    <a href="Deletedata.php"><li>Delete</li></a>
+    <a href="connect.php"><li>Connect database</li></a>
 </ul>     
 </li>
 <li>Mobiles<i class="fa fa-angle-right"></i>
