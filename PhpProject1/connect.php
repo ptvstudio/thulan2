@@ -47,7 +47,7 @@ echo '<p>productinformation:</p>';
         <th>Product ID</th>
         <th>Product name</th>
         <th>Size</th>
-        <th>bBasicprice</th>
+        <th>Basicprice</th>
           <th>Residual</th>
       </tr>
     </thead>
