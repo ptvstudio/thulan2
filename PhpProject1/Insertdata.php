@@ -27,7 +27,7 @@ list-style: none;
 
 if (empty(getenv("DATABASE_URL"))){
     echo '<p>The DB does not exist</p>';
-    $pdo = new PDO('pgsql:host=localhost;port=5432;dbname=PTV', 'postgres', 'Vupro1234@');
+    $pdo = new PDO('pgsql:host=localhost;port=5432;dbname=mysql', 'postgres', '12345');
 }  else {
      
    $db = parse_url(getenv("DATABASE_URL"));
@@ -49,7 +49,7 @@ if($pdo === false){
 
 
 $sql = "INSERT INTO product(productid, productname, sizes, basicprice, residual)"
-        . " VALUES('$_POST[productid]','$_POST[productname]','$_POST[sizes]','$_POST[basicprice]','$_POST[residual]')";
+        . " VALUES('$_POST[productid]','$_POST[productname]','$_POST[size]','$_POST[basicprice]','$_POST[residual]')";
 $stmt = $pdo->prepare($sql);
 //$stmt->execute();
  if (is_null($_POST[productid])) {
