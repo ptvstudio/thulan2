@@ -72,25 +72,7 @@ echo '<p>productinformation:</p>';
       </tr>
     </thead>
     <tbody>
-      <?php
-      // tạo vòng lặp 
-         //while($r = mysql_fetch_array($result)){
-             foreach ($resultSet as $row) {
-      ?>
-   
-      <tr>
-        <td scope="row"><?php echo $row['productid'] ?></td>
-        <td><?php echo $row['productname'] ?></td>
-        <td><?php echo $row['sizes'] ?></td>
-        <td><?php echo $row['basicprice'] ?></td>
-        <td><?php echo $row['residual'] ?></td>
-        
-      </tr>
-     
-      <?php
-        }
-      ?>
-      <section class="footer">
+        <section class="footer">
     <div class="container text-center">
     <div class="row">
     <div class="col-md-3">
@@ -138,6 +120,25 @@ echo '<p>productinformation:</p>';
         document.getElementById("close-btn").style.display="none";
     }
     </script>    
+      <?php
+      // tạo vòng lặp 
+         //while($r = mysql_fetch_array($result)){
+             foreach ($resultSet as $row) {
+      ?>
+   
+      <tr>
+        <td scope="row"><?php echo $row['productid'] ?></td>
+        <td><?php echo $row['productname'] ?></td>
+        <td><?php echo $row['sizes'] ?></td>
+        <td><?php echo $row['basicprice'] ?></td>
+        <td><?php echo $row['residual'] ?></td>
+        
+      </tr>
+     
+      <?php
+        }
+      ?>
+      
     </tbody>
   </table>
 </div>
