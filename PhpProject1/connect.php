@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>PTV Online</title> 
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -24,10 +25,7 @@
 <li><a href="Register.php">Register</a></li>
 </ul>    
 </div>
-</head>
-    <body>
 <h1>PRODUCT DATABASE CONNECTION</h1>
-
 <?php
 ini_set('display_errors', 1);
 
@@ -63,8 +61,21 @@ $resultSet = $stmt->fetchAll();
 echo '<p>productinformation:</p>';
 
 ?>
+<div id="container">
+<table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Product ID</th>
+        <th>Product name</th>
+        <th>Size</th>
+        <th>Basicprice</th>
+        <th>Residual</th>
+      </tr>
+    </thead>
+    <tbody>
       <?php
-      
+      // tạo vòng lặp 
+         //while($r = mysql_fetch_array($result)){
              foreach ($resultSet as $row) {
       ?>
    
@@ -76,7 +87,14 @@ echo '<p>productinformation:</p>';
         <td><?php echo $row['residual'] ?></td>
         
       </tr>
-     <section class="footer">
+     
+      <?php
+        }
+      ?>
+    </tbody>
+  </table>
+</div>
+<section class="footer">
     <div class="container text-center">
     <div class="row">
     <div class="col-md-3">
@@ -110,12 +128,19 @@ echo '<p>productinformation:</p>';
         <p class="copyright"> Made with <i class="fa fa-heart-o"></i> by PTV</p>
     </div>
     </section>
-      <?php
-        }
-      ?>
-      
-    </tbody>
-  </table>
-</div>
+<script>
+    function openmenu()
+    {
+        document.getElementById("side-menu").style.display="block";
+        document.getElementById("menu-btn").style.display="none";
+        document.getElementById("close-btn").style.display="block";
+    }
+    function closemenu()
+    {
+        document.getElementById("side-menu").style.display="none";
+        document.getElementById("menu-btn").style.display="block";
+        document.getElementById("close-btn").style.display="none";
+    }
+    </script>    
 </body>
 </html>
