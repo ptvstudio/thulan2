@@ -14,7 +14,7 @@
 <div class="search-box">
 <i class="fa fa-bars" id="menu-btn" onclick="openmenu()"></i>
 <i class="fa fa-bars" id="close-btn" onclick="closemenu()"></i>
-<a href="PTVOnline.php"><img src="Images/Logo.png" class="logo"></a>
+<a href="index.php.php"><img src="Images/Logo.png" class="logo"></a>
 <input type=text class="form-control">
 <span class="input-group-text"><i class="fa fa-search"></i></span>          
 </div>
