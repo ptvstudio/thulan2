@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>PRODUCT DATABASE CONNECTION</h1>
+<head>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -25,6 +24,10 @@
 <li><a href="Register.php">Register</a></li>
 </ul>    
 </div>
+</head>
+    <body>
+<h1>PRODUCT DATABASE CONNECTION</h1>
+
 <?php
 ini_set('display_errors', 1);
 
@@ -72,7 +75,35 @@ echo '<p>productinformation:</p>';
       </tr>
     </thead>
     <tbody>
-        <section class="footer">
+<script>
+    function openmenu()
+    {
+        document.getElementById("side-menu").style.display="block";
+        document.getElementById("menu-btn").style.display="none";
+        document.getElementById("close-btn").style.display="block";
+    }
+    function closemenu()
+    {
+        document.getElementById("side-menu").style.display="none";
+        document.getElementById("menu-btn").style.display="block";
+        document.getElementById("close-btn").style.display="none";
+    }
+    </script>    
+      <?php
+      // tạo vòng lặp 
+         //while($r = mysql_fetch_array($result)){
+             foreach ($resultSet as $row) {
+      ?>
+   
+      <tr>
+        <td scope="row"><?php echo $row['productid'] ?></td>
+        <td><?php echo $row['productname'] ?></td>
+        <td><?php echo $row['sizes'] ?></td>
+        <td><?php echo $row['basicprice'] ?></td>
+        <td><?php echo $row['residual'] ?></td>
+        
+      </tr>
+     <section class="footer">
     <div class="container text-center">
     <div class="row">
     <div class="col-md-3">
@@ -106,35 +137,6 @@ echo '<p>productinformation:</p>';
         <p class="copyright"> Made with <i class="fa fa-heart-o"></i> by PTV</p>
     </div>
     </section>
-<script>
-    function openmenu()
-    {
-        document.getElementById("side-menu").style.display="block";
-        document.getElementById("menu-btn").style.display="none";
-        document.getElementById("close-btn").style.display="block";
-    }
-    function closemenu()
-    {
-        document.getElementById("side-menu").style.display="none";
-        document.getElementById("menu-btn").style.display="block";
-        document.getElementById("close-btn").style.display="none";
-    }
-    </script>    
-      <?php
-      // tạo vòng lặp 
-         //while($r = mysql_fetch_array($result)){
-             foreach ($resultSet as $row) {
-      ?>
-   
-      <tr>
-        <td scope="row"><?php echo $row['productid'] ?></td>
-        <td><?php echo $row['productname'] ?></td>
-        <td><?php echo $row['sizes'] ?></td>
-        <td><?php echo $row['basicprice'] ?></td>
-        <td><?php echo $row['residual'] ?></td>
-        
-      </tr>
-     
       <?php
         }
       ?>
