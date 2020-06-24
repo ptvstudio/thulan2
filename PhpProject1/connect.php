@@ -63,32 +63,6 @@ $resultSet = $stmt->fetchAll();
 echo '<p>productinformation:</p>';
 
 ?>
-<div id="container">
-<table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Product ID</th>
-        <th>Product name</th>
-        <th>Size</th>
-        <th>Basicprice</th>
-        <th>Residual</th>
-      </tr>
-    </thead>
-    <tbody>
-<script>
-    function openmenu()
-    {
-        document.getElementById("side-menu").style.display="block";
-        document.getElementById("menu-btn").style.display="none";
-        document.getElementById("close-btn").style.display="block";
-    }
-    function closemenu()
-    {
-        document.getElementById("side-menu").style.display="none";
-        document.getElementById("menu-btn").style.display="block";
-        document.getElementById("close-btn").style.display="none";
-    }
-    </script>    
       <?php
       // tạo vòng lặp 
          //while($r = mysql_fetch_array($result)){
