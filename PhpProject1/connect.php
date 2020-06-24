@@ -64,8 +64,7 @@ echo '<p>productinformation:</p>';
 
 ?>
       <?php
-      // tạo vòng lặp 
-         //while($r = mysql_fetch_array($result)){
+      
              foreach ($resultSet as $row) {
       ?>
    
@@ -111,9 +110,7 @@ echo '<p>productinformation:</p>';
         <p class="copyright"> Made with <i class="fa fa-heart-o"></i> by PTV</p>
     </div>
     </section>
-      <?php
-        }
-      ?>
+      
       
     </tbody>
   </table>
