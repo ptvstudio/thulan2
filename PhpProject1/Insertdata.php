@@ -36,7 +36,7 @@ list-style: none;
 
 </head>
 <body>
-<h1>INSERT DATA TO DATABASE</h1>
+<h1>INSERT PRODUCT TO DATABASE</h1>
 <h2>Enter data into product table</h2>
 <ul>
 <form name="Insertdata" action="Insertdata.php" method="POST" >
