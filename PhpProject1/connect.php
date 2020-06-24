@@ -110,7 +110,9 @@ echo '<p>productinformation:</p>';
         <p class="copyright"> Made with <i class="fa fa-heart-o"></i> by PTV</p>
     </div>
     </section>
-      
+      <?php
+        }
+      ?>
       
     </tbody>
   </table>
