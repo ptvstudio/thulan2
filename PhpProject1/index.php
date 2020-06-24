@@ -29,10 +29,10 @@
 <section class="header">
 <div class="side-menu" id="side-menu">
 <ul>
-    <a href="Updatedata.php"><li>Update<i class="fa fa-angle-right"></i></li></a>
-    <a href="Insertdata.php"><li>Insert<i class="fa fa-angle-right"></i></li></a>  
-    <a href="Deletedata.php"><li>Delete<i class="fa fa-angle-right"></i></li></a>
-    <a href="connect.php"><li>Connect database<i class="fa fa-angle-right"></i></li></a> 
+    <li>Onsale<i class="fa fa-angle-right"></i></li></a
+    <a href="Insertdata.php"><li>Insert Product<i class="fa fa-angle-right"></i></li></a>  
+    <li>Robot<i class="fa fa-angle-right"></i></li>
+    <a href="connect.php"><li>View<i class="fa fa-angle-right"></i></li></a> 
 </ul>       
 </div>  
 <div class="slider">
