@@ -12,7 +12,7 @@
         </form>
         <?php
         $connection = mysqli_connect("localhost", "root", "");
-        $db = mysqli_select_db($connection, 'users');
+        $db = mysqli_select_db($connection, 'product');
         
         if(isset($_POST['search']))
         {
