@@ -18,8 +18,8 @@
         {
             $productid = $_POST['productid'];
             
-            $query = "SELECT * FROM Product where productid='$productid' ";
-            $query_run = mysqli_query($connection, $query);
+            $sql = "SELECT * FROM Product where productid='$productid' ";
+            $sql = mysqli_query($connection, $query);
             
             while($row = mysqli_fetch_array($query_run))
             {
